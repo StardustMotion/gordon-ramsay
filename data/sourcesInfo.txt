@@ -1,0 +1,11 @@
+All Gordon Ramsay quotes come from the TV Show Kitchen Nightmares.
+
+
+Scripts were found on this website
+https://www.springfieldspringfield.co.uk/episode_scripts.php?tv-show=kitchen-nightmares-2007
+
+
+Gordon's quotes were extracted manually from the show's script (as opposite to other people's quotes in the show).
+
+
+The raw quotes are encoded in a txt file (in the dataSets folder), one sentence followed by a line break.
