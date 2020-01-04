@@ -20,6 +20,6 @@ Spécifiez le nombre de morceaux de texte à générer (environ 120 caractères 
 
 # Background technique
 
-Main utilise le fichier parserOutput.in. C'est un fichier qui contient les données nécéssaires pour que l'algorithme puisse générer : les mots, leurs fréquences, les prochains mots etc.
+main.py utilise le fichier parserOutput.in. C'est un fichier qui contient les données nécéssaires pour que l'algorithme puisse générer : les mots, leurs fréquences, les prochains mots etc.
 Ce fichier (parserOutput.in) peut-être reproduit par vous même : il suffit d'executer parser.py.
 parser.py utilise des données brutes dans data/dataSets, et les transforme en données utilisables dans parserOutput.in.
