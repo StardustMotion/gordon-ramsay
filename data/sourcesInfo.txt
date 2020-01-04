@@ -1,11 +1,9 @@
-All Gordon Ramsay quotes come from the TV Show Kitchen Nightmares.
+Toutes les phrases exprimées par Gordon Ramsay sont issues de son apparition dans le show télévisé Kitchen Nightmares (Cauchemar en Cuisine). 
 
 
-Scripts were found on this website
+Les scripts sont issus de ce site
 https://www.springfieldspringfield.co.uk/episode_scripts.php?tv-show=kitchen-nightmares-2007
 
+Les répliques de Gordon ont dû etre extraites manuellement/humainement car le nom du locuteur n'est pas présent dans ce script, il a fallu comparer le script avec l'épisode à la main - ce pourquoi il y a très peu de data : à l'heure de modification de ce fichier, le programme est basé sur les répliques d'un seul épisode.
 
-Gordon's quotes were extracted manually from the show's script (as opposite to other people's quotes in the show).
-
-
-The raw quotes are encoded in a txt file (in the dataSets folder), one sentence followed by a line break.
+Les répliques sont écrites dans un fichier texte (dans le dossier dataSets). Une phrase ou plus, régulièrement suivies d'un \n retour à la ligne pour aérer.
