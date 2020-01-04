@@ -11,7 +11,7 @@ Le style de phrase est basé sur les phrases de Gordon dans la série Cauchemar 
 
 # Implémentation
 
-A l'aide d'une chaîne de Markov de mémoire m (à définir), le programme sélectionne aléatoirement des mots utilisés par Gordon, selon les m mots précédents et leur probabilité d'être sélectionnés.
+A l'aide d'une chaîne de Markov de mémoire m = 1, le programme sélectionne aléatoirement des mots utilisés par Gordon avec une probabilité basée sur le taux d'apparition. M = 1 signifie que le prochain mot dépend des m = 1 ==> uniquement du mot précédent.
 
 # Guide d'utilisation
 
