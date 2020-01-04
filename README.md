@@ -1,7 +1,9 @@
 # gordon-ramsay
 
 
-Projet de TATIA
+Projet de TATIA par
+ALESSANDRO Kévin
+DENOS Alexandre
 
 
 Idée  : un programme capable de générer des phrases Gordon Ramsay-esque (chef culinaire britannique)
