@@ -36,13 +36,17 @@ with open('parserOutput.in', 'r') as file:
 
 database = ast.literal_eval(database)
 
-startKeys = list(database.keys())
+keys = list(database.keys())
 # removing the eventual empty string word which shouldn't happen
-#startKeys.remove("")
+# keys.remove("")
 
-for key in startKeys:
-    if not(key[0].isupper()):
-        startKeys.remove(key)
+startKeys = []
+# startKeys is a subset of the database words, it only contains
+# words starting with a caps (words which can start a sentence)
+for key in keys:
+    if key[0].isupper():
+        startKeys.append(key)
+
 
 for abc in range(int(nb)):
 
