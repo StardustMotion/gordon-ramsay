@@ -4,7 +4,8 @@
 import random
 import ast
 
-nb = input("How much sentences to generate?\n")
+# a "message" is a set of 1 or several sentences.
+nb = input("How much messages to generate?\n")
 print("")
 
 def nextWord(last):
@@ -48,21 +49,29 @@ for key in keys:
         startKeys.append(key)
 
 
-for abc in range(int(nb)):
+# generate 1 message (1 set of sentences)    
+def generateMessage():
+    funny = ""
+    while(len(funny) < 120):
+        funny += generateSentence()
+    print(">>>", funny, "\n")
 
-    funny = random.choice(startKeys)
-    last = funny
+# generate 1 sentence (an order of words starting with a capitalised
+# first letter word, until a dot is found)
+def generateSentence():    
+    sentence = random.choice(startKeys)
+    last = sentence
 
     endSentence = False;
-    while len(funny) < 120:# or not(endSentence):
-        endSentence = False
+    while not(endSentence):
         last = nextWord(last)
         if (last == None):
-            last = random.choice(startKeys)
-            endSentence = True
-            
-        funny += " " + last
+            return sentence + " "
+        sentence += " " + last
 
 
 
-    print(">>>", funny, "\n")
+
+# generate nb messages, as requested by the user
+for abc in range(int(nb)):
+    generateMessage()
