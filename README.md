@@ -2,11 +2,14 @@
 
 
 Projet de TATIA par
+
 ALESSANDRO Kévin
+et
+
 DENOS Alexandre
 
 
-Idée  : un programme capable de générer des phrases Gordon Ramsay-esque (chef culinaire britannique)
+Concept  : un programme capable de générer des phrases Gordon Ramsay-esque (chef culinaire britannique)
 
 Le style de phrase est basé sur les phrases de Gordon dans la série Cauchemar en Cuisine (https://en.wikipedia.org/wiki/Kitchen_Nightmares)  et sont en anglais
 
@@ -15,6 +18,9 @@ Le style de phrase est basé sur les phrases de Gordon dans la série Cauchemar 
 
 A l'aide d'une chaîne de Markov de mémoire m = 1, le programme sélectionne aléatoirement des mots utilisés par Gordon avec une probabilité basée sur le taux d'apparition. 
 m = 1 signifie que le prochain mot dépend des m = 1 mots précédent, soit uniquement du mot précédent.
+
+En d'autre perspectives, chaque paire de 2 mot (2 mots successifs) sont liés : le 2ème est choisi en fonction du premier.
+La cohérence du sens de la phrase est donc -pour le moment- limitée à chaque paire de 2 mots.
 
 # Guide d'utilisation
 
