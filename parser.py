@@ -7,6 +7,7 @@
 
 
 import fileinput
+import os
 
 
 def newMarkov(curVal, newVal):
@@ -23,6 +24,11 @@ def newMarkov(curVal, newVal):
 
 # On récupère les lignes de l'entrée en supprimant les caractères blancs :
 entree_str = [line.strip() for line in fileinput.input("data\dataSets\s4ep1.in")]
+entree_str2 = [line.strip() for line in fileinput.input("data\dataSets\generalQuotes.in")]
+
+
+entree_str.extend(entree_str2)
+
 
 # space division
 entree_str = [sentence.split(" ") for sentence in entree_str]
@@ -63,6 +69,11 @@ for i in range(len(entree_str)):
 
 
 #print(entree_str)
+
+try:
+    os.remove("parserOutput.in")
+except FileNotFoundError:
+    pass
 
 f = open("parserOutput.in", "a")
 f.write(str(database))
